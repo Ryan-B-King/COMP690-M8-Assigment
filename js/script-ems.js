@@ -10,7 +10,7 @@ const showEmployeeCount = () => {
 // CHECK TO SEE IF STORAGE OBJECT EXISTS WHEN THE PAGE LOADS
 // IF DOES, RETURN STORAGE OBJECT INTO ARRAY INSTEAD OF POPULATED ARRAY
 window.addEventListener('load', () => {
-  if (JSON.parse(localStorage.getItem('employees'))) {
+  if (JSON.parse(localStorage.getItem('employees').length)) {
     employees = JSON.parse(localStorage.getItem('employees'));
   } else {
     employees = [
